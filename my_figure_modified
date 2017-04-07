@@ -1,0 +1,27 @@
+import turtle
+
+def draw_square():
+    window = turtle.Screen()
+    window.bgcolor("lightblue")
+
+    brad = turtle.Turtle()
+    brad.shape("turtle")
+    brad.color ("yellow")
+    brad.speed(18)
+    brad.shape("circle")
+    brad.pencolor("orange")
+    brad.pensize(3)
+
+    brad.begin_fill()
+    for outer in range (30): #repeat 6 times.
+        
+        for inner in range(4):  #repeat four times
+            brad.forward(50)
+            brad.left(90)
+        brad.left(12)
+    brad.end_fill()
+    
+    
+    window.exitonclick()
+
+draw_square()
